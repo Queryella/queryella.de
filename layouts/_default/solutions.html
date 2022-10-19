@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+<div class="container-fluid" >
+
+    <div class="container intro">
+        <div class="row pt-lg-5 pt-0 pb-5 my-5 align-items-start">
+        
+            <div class="col-xl-8 col-lg-8 col-12  d-flex flex-column justify-content-center position-relative pe-md-5" >
+                {{ $content := .Content }}
+         
+                {{ $content | safeHTML }}
+            
+            </div>
+            <!-- <div class="col-xl-4 col-lg-4 col-12  d-flex flex-column justify-content-center position-relative" >
+              <img class="img-fluid" src="{{ .Site.BaseURL }}/img/about-us/{{ .Params.image}}" alt="">
+                
+            
+            </div> -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid" >
+    <div class="container-lg solution-features py-5 background-gray-50 mb-5">
+        <!-- <div class="row pt-lg-5 pt-0 grid-divider g-5">
+            <h2 class="mt-0 ms-4 px-0">{{ with .Site.GetPage "/solutions" }}{{ .Title }}{{ end }}</h2>
+        </div> -->
+        {{ $solutions := where .Site.RegularPages "Type" "solutions"}}
+        <div class="row pt-0 pb-5 my-3 grid-divider g-5">
+            {{ range $solutions }}
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-3 d-flex justify-content-center position-relative" >
+                <div class="icon-wrapper">
+                    <a class="zoom-wrapper">
+                        <img class="img-fluid" src="{{ .Site.BaseURL }}/img/solutions/{{ .Params.image }}" alt="{{ .Title }}">
+                    </a>
+                </div>
+                <div class="content-wrapper">
+                    <a class="title mt-3 mb-0" aria-label="Project name: {{ .Title }}">{{ .Title }}</a>
+                    <span class="mt-2">
+                        {{ $content := .Content }}
+                        {{ $content | safeHTML }}
+                    </span>
+                </div>
+            </div>
+
+            
+            {{ end }}
+        </div>
+    </div>
+
+</div>
+      
+
+{{ end }}

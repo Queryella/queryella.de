@@ -1,0 +1,127 @@
+{{ define "main" }}
+<div class="container-fluid" >
+
+    <div class="container intro">
+        <div class="row pt-lg-5 pt-0 pb-5 my-5 align-items-start justify-content-between">
+        
+            <div class="col-xl-5 col-lg-5 col-12  d-flex flex-column justify-content-center position-relative pe-lg-5" >
+                <div class="row mb-3">
+                {{ $content := .Content }}
+         
+                {{ $content | safeHTML }}
+                </div>
+                <div class="row">
+                    <div class="col-12 ">
+                        <p class="mb-1">Phone: <a href="tel:{{ .Params.phone }}">{{ .Params.phone}}</a></p>
+                        <p class="mb-1">Email: <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>                      
+                    </div>                
+                </div>
+                <br>
+                <div class="row">
+                <div class="col-6 ">
+                    <!-- <p class="mb-1">
+                        {{ .Params.address }}
+                    </p>    -->
+                </div>
+            </div>
+            
+            </div>
+            <div class="col-xl-6 col-lg-6 col-12  d-flex flex-column justify-content-center position-relative ps-lg-5" >
+                <div class="row">
+                    <div class="col-md-5 col-7">
+                        <p class="mb-1">
+                            {{ .Params.address }}
+                        </p>   
+                    </div>
+                </div>
+                <!-- <form 
+                id="contact-us"
+                name="contact"
+                netlify
+                data-netlify-honeypot="bot-field"
+                >
+                    <div class="input-wrapper">
+                        <label class="pb-1">Name *</label>
+                        <input type="text" name="name" id="name" required/>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="pb-1">Email *</label>
+                        <input type="email" name="email" id="email" required/>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="pb-1">Phone (optional)</label>
+                        <input type="tel" name="tel" id="tel" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="pb-1">Message *</label>
+                        <textarea id="msg" name="content" cols="30" rows="8" required></textarea>
+                    </div>
+                    <div>
+                    <button class="main-bnt" type="submit" onclick="message()" >Submit</button>
+                    </div>
+                    <div class="message">
+                        <div class="success" id="success">Your Message Successfully Sent!</div>
+                        <div class="danger" id="danger">Feilds Can't be Empty!</div>
+                    </div>
+                </form> -->
+                
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    function message(){
+    var Name = document.getElementById('name');
+    var email = document.getElementById('email');
+    var msg = document.getElementById('msg');
+    const success = document.getElementById('success');
+    const danger = document.getElementById('danger');
+
+    if(Name.value === '' || email.value === '' || msg.value === ''){
+        window.scrollBy(0, 100);
+        danger.style.display = 'block';
+    }
+    else{
+        setTimeout(() => {
+            Name.value = '';
+            email.value = '';
+            msg.value = '';
+        }, 2000);
+        window.scrollBy(0, 100);
+        success.style.display = 'block';
+    }
+
+
+    setTimeout(() => {
+        danger.style.display = 'none';
+        success.style.display = 'none';
+    }, 9000);
+
+}
+</script>
+<script>
+    const handleSubmit = (e) => {
+  e.preventDefault();
+  let myForm = document.getElementById("contact-us");
+  let formData = new FormData(myForm);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+};
+    document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
+
+
+</script>
+
+{{ end }}

@@ -1,0 +1,96 @@
+<!-- Footer -->
+<footer class="text-center text-md-start ">
+  
+  {{ if eq .Params.cta "on"}}
+  {{ partial "cta.html" .}}
+  {{ end }}
+
+  
+  
+    <!-- Section: Links  -->
+    <section>
+      <div class="container-lg text-center text-md-start background-indigo-50 p-sm-0">
+        <!-- Grid row -->
+        <div class="row p-5">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 me-auto mb-4">
+            <!-- Content -->
+            <h2 class="text-uppercase fw-bold mb-4">
+              <img src="/img/logo-footer.svg" alt="Querylla footer logo">
+            </h2>
+            <p>Queryella enables in-depth checks of mobile apps for security vulnerabilities and data protection violations.</p>
+            
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-4 mb-5 d-flex align-items-center justify-content-md-start justify-content-center">
+            <div class="logo-footer-wrapper w-75 d-flex justify-content-evenly">
+              <img src="/img/home/supporter/bundestministerium.png" alt="" class="logo-footer1" width="100">
+              <img src="/img/home/supporter/start-up-secure.png" alt="" class="logo-footer1" width="100">
+            </div>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+             <!-- Links -->
+             {{- $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" -}}
+             {{- range .Site.Menus.footer1 -}}
+             
+                 <p>
+                   <a href="{{ .URL | absLangURL }}" class="text-reset {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}} text-decoration-none" {{ if eq
+                       ($firstUrlElement|lower) (.URL|lower) }}aria-current="page" {{end}}>{{ .Name }}</a>
+                 </p>
+             {{ end }}
+            </div>
+  
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              {{- $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" -}}
+              {{- range .Site.Menus.footer2 -}}
+              
+                  <p>
+                    <a href="{{ .URL | absLangURL }}" class="text-reset {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}} text-decoration-none" {{ if eq
+                        ($firstUrlElement|lower) (.URL|lower) }}aria-current="page" {{end}}>{{ .Name }}</a>
+                  </p>
+              {{ end }}
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            {{- with .Site.Params.social }}
+            {{ partial "social-icons.html" . }}
+            {{- end }}
+          </div>
+         
+           
+          
+          <!-- Grid column -->
+        </div>
+         <!-- Copyright -->
+        <div class="row py-5">
+          <div class="col-12">
+            <p class="mb-0">
+              <!-- Links -->
+              {{- $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" -}}
+              {{- range .Site.Menus.footer3 -}}
+              
+                 
+                    <a href="{{ .URL | absLangURL }}" class="text-reset {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}} text-decoration-none  me-3" {{ if eq
+                        ($firstUrlElement|lower) (.URL|lower) }}aria-current="page" {{end}}>{{ .Name }}</a>
+                  
+              {{ end }}
+            </p>
+          </div>
+        </div>
+         <!-- Copyright -->
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    
+  </footer>
+  <!-- Footer -->
+
+{{ partial "javascript.html" . }}

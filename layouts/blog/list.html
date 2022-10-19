@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main class="post py-5">
+    <div class="container-fluid">
+        <div class="container">
+
+            <!-- TODO: Do not launch blog on initial launch -->
+
+            {{ $paginator := .Paginate (where .Pages "Type" "blog") 6}}
+
+            <div class="row py-5 g-5">
+                {{ range first 6 $paginator.Pages }}
+                <div class="col-xl-6 col-lg-12 col-12">
+                    <article class="card">
+                        <img class="grayscale mb-3" src="{{ .Site.BaseURL }}/img/blog/{{ .Params.image }}" alt="{{ .Title }}">
+                        <!--<p class="info mb-0">{{ .ReadingTime }} minute read / <strong><time datetime="{{ .Date.Format .Site.Params.dateform }}">{{ .Date.Format .Site.Params.dateform }}</time></strong></p>-->
+                        <a class="title w-75 mb-2" href="{{ .Permalink }}">{{ .Title }}</a>
+                        <!--<p class="description mb-0">{{ .Summary | truncate 200 }}</p>-->
+                    </article>
+                </div>
+                {{ end }}
+            </div>
+            {{ template "_internal/pagination.html" . }}
+        </div>
+    </div>
+</main>
+{{ end }}

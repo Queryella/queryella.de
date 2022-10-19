@@ -1,0 +1,46 @@
+{{ define "main" }}
+<main class="py-5">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row content py-5 g-md-5">
+                {{ $content := .Content }}
+                {{ $content | safeHTML }}
+            </div>
+           
+
+           
+            <div class="row jobs py-5 g-md-5">     
+            {{ range .Site.Taxonomies.departments }}
+                <!-- <h3 class=" mb-3"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> </h3> -->
+                {{ range .Pages }}
+                    <div class="job-wrapper py-3 m-md-3 my-3 mx-auto row" onclick="window.location.href='{{ .Permalink }}'" >
+                        <div class="col-md-6 col-12 mb-md-0 mb-3">
+                            <div class="row mb-2">
+                                <a class="job-title" href="{{ .Permalink }}">{{ .Title }}</a>   
+                            </div>
+                            <div class="row d-inline">
+                                <!-- <img src="{{ .Site.BaseURL }}/img/svg/tag.svg" alt="" class="pe-0 job-icons">
+                                {{- with .Params.tags }} 
+                                    {{- range . -}}
+                                    <span class="tag ps-1"><a href='{{ "/tags/" | absLangURL }}{{ . | urlize }}'>{{.}}</a></span>&nbsp;
+                                    {{- end }}
+                                {{- end }}    -->
+                                <img src="{{ .Site.BaseURL }}/img/svg/location.svg" alt="" class="pe-0 job-icons">     
+                                <span class="location ps-1"><a href='#'>{{ .Params.Location}} </a></span>&nbsp;                
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 d-flex flex-column justify-content-end align-items-md-end align-items-start">
+                            <div class="row mb-2 ms-md-0 ms-1 job-type p-2">{{ .Params.Job_type }}</div>
+                            <div class="row job-close-date"> <img src="{{ .Site.BaseURL }}/img/svg/calendar.svg" alt="" class="job-icons2" >Closing on {{ .Params.Close_date }}</div>
+                        </div>
+                    </div>
+                
+                {{ end }}
+            {{ end }}
+            </div>
+            
+        </div>
+    </div>
+</main>
+
+{{ end }}

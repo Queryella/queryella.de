@@ -1,0 +1,44 @@
+{{ define "main" }}
+<main class="py-5">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row content py-5 g-md-5">
+                {{ $content := .Content }}
+                {{ $content | safeHTML }}
+            </div>
+            
+
+           
+            <div class="row pub-articles py-5 g-md-5 ">     
+            
+                {{ range .Pages }}
+                    <div class="pub-articles-wrapper py-3 m-md-3 my-3 mx-auto row d-flex flex-column-reverse flex-md-row" >
+                        <div class="col-md-10 col-12">
+                            <div class="row mb-3">
+                                <a class="pub-articles-title">{{ .Title }}</a>   
+                            </div>
+                            <div class="row mb-2">
+                                <span class="pub-articles-content">
+                                    {{ $content := .Content }}
+                                    {{ $content | safeHTML }}
+                                </span>   
+                            </div>
+                            <div class="row d-inline">
+                                <img src="{{ .Site.BaseURL }}/img/svg/authors.svg" alt="" class="pe-0 pub-icons">     
+                                <span class="authors ps-1">{{ .Params.Authors}}</span>&nbsp;                
+                            </div>
+                        </div>
+                        <div class="col-2 col-12 mb-3 d-flex flex-column justify-content-start align-items-md-end align-items-center">
+                            <div class="row pub-date"> <img src="{{ .Site.BaseURL }}/img/svg/calendar.svg" alt="" class="pub-icons2 ps-0" >{{ .Params.Publication_date }}</div>                     
+                        </div>
+                    </div>
+                
+                {{ end }}
+           
+            </div>
+            
+        </div>
+    </div>
+</main>
+
+{{ end }}

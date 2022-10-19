@@ -1,0 +1,97 @@
+{{ define "main" }}
+
+<main class="post h-75 ">
+
+    <!-- <div class="container-fluid header px-0">
+     {{ with .Params.Image }}
+     <img class="post-cover" src="{{ . }}" />
+     {{ end }}
+     <div class="white-block"></div>
+     </div>-->
+ 
+     <div class="container-fluid move-up">
+         <div class="container">
+             <div class="row">
+                 <div class="col-xl-8 col-lg-8 col-md-12 col-12 py-5 cutoff">
+                     <article>
+                     
+ 
+                       <!--    {{ if .IsTranslated }}
+                         | {{ i18n "postAvailable" }}
+                         {{ range .Translations }}
+                         <a class="pb-2" href="{{ .Permalink }}"><span>{{ index $.Site.Data.lang (.Lang) }}</span></a>
+                         <br>
+                         {{ end}}
+                         {{ end }}
+                         <br>
+ 
+                    <h1 class="post-title">{{ .Title | markdownify }}</h1>
+ 
+                         <p>by 
+                         
+                             <a class="text-decoration-none" href="{{ .Params.website }}" target="_blank" rel="noopener noreferrer">{{ .Params.authors }}</a>
+                         
+                         
+ 
+                             <span class="ms-5">{{ i18n "readingTime" .Page.ReadingTime }}</span><span class="ms-5">{{ i18n "wordCount" .Page.WordCount }}</span>
+                             {{- with .Params.categories }}
+                             
+                                 {{- range . -}}
+                                 <span class="categories"><a class="text-decoration-none" href="{{ "/categories/" | absLangURL }}{{ . | urlize }}"> {{.}}  </a></span>
+                                 {{- end }}
+                             
+                             {{- end }}
+                         </p>-->
+ 
+                         {{- if .Params.toc }}
+                         <hr />
+                         <aside id="toc">
+                             <div class="toc-title">{{ i18n "tableOfContents" }}</div>
+                             {{ .TableOfContents }}
+                         </aside>
+                         <hr />
+                         {{- end }}
+                 
+                         <div class="post-content pe-3">
+                             {{ $content := .Content }}
+                             {{ $content | safeHTML }}
+                         </div>                       
+                     </article>
+ 
+        <!-- <div class="post-info">
+             {{- with .Params.tags }}
+             <p>
+                 {{- range . -}}
+                 <span class="tag"><a href="{{ "/tags/" | absLangURL }}{{ . | urlize }}">{{.}}</a></span>
+                 {{- end }}
+             </p>
+             {{- end }}
+     
+     
+             <p>{{ i18n "publishDate" . }}
+                 {{ if .Site.Params.dateformNumTime }}<time datetime="{{ dateFormat .Site.Params.dateformNumTime .Date.Local }}">{{ dateFormat .Site.Params.dateformNumTime .Date.Local }}</time>{{ else }}<time datetime="{{ dateFormat .Site.Params.dateformNumTime .Date.Local }}">{{ dateFormat "2006-01-02 15:04" .Date.Local }}</time>{{ end }}
+                 {{ if ne .PublishDate .Lastmod }}, {{ i18n "updatedOn" . }}
+                 <time datetime="{{ .Date.Format .Site.Params.dateformNumTime }}">{{ .Lastmod.Format "2006-01-02 15:04" }}</time>{{ end }}
+             </p>
+     
+             {{- if .GitInfo }}
+             <p><a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank"
+                     rel="noopener" title="Commit message: {{ .GitInfo.Subject}}">{{ .GitInfo.AbbreviatedHash }}</a> @
+                 {{ if .Site.Params.dateformNum }}<time datetime="{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}">{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}</time>{{ else }}<time datetime="{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}">{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}</time>{{ end }}
+             </p>
+             {{- end }}
+         </div>-->
+ 
+     
+     </div>
+     <div class="col-xl-4 col-lg-4 col-md-12 col-12 pt-5 cutoff">
+ 
+     </div>
+     </div>
+ 
+         </div>
+     </div>
+ </main>
+ 
+
+{{ end }}

@@ -1,0 +1,11 @@
+
+<header class="background-indigo-50 py-3 {{if .IsHome}} banner-true{{ end }}"  >
+{{ if len .Site.Menus }}
+{{ partial "menu.html" . }}
+{{ if .IsHome }}
+{{ partial "banner-home.html" . }}
+{{ else }}
+{{ partial "banner.html" . }}
+{{ end }}
+{{ end }}
+</header>

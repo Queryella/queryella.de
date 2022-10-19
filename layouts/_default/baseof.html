@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body class='d-flex flex-column min-vh-100 {{ if or (eq (.Page.RelPermalink | truncate 6 ) "/blog/ …" "/produ …" ) (eq (.Page.RelPermalink | truncate 9 ) "/de/blog/ …") }} blog-single {{ else if or (eq (.Page.RelPermalink | truncate 6 ) "/jobs/ …"  ) (eq (.Page.RelPermalink | truncate 9 ) "/de/jobs/ …")}} job-single {{ else }} {{ .Title | lower }} {{ end }} '>
+    
+    <svg id="fader" class="fade-out"></svg>
+    <script>fadeInPage()</script>
+   
+    <a class="screen-reader-text" href="#content">Skip to content</a>
+
+    {{ partial "header.html" . }}
+
+    <div id="content" class="content">
+        {{ block "main" . }}{{ end }}
+    </div>
+
+    {{ block "footer" . }}
+    {{ partial "footer.html" . }}
+    {{ end }}
+    
+</body>
+
+</html>

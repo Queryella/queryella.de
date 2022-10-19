@@ -1,0 +1,39 @@
+    <div class="ms-4 d-flex align-items-start bor-left">
+        {{ range .Site.Languages }}
+          {{ if eq . $.Site.Language }}
+          <li class="nav-item ms-2">
+            <p class="nav-link active language  text-uppercase mb-0">{{ .Lang }}</p>
+          </li>
+          {{ else }}
+            {{ range $.Translations }}
+            <li class="nav-item ms-2">
+              <a class="nav-link language  text-uppercase" href ="{{ .Permalink }}">{{ .Lang }}</a>
+            </li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+          </div>
+
+    <style>
+.navbar-nav .nav-item .language {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 8px 7px;
+    margin: 7px 0px;
+}
+.bor-left::before {
+    content: '';
+    position: absolute;
+    height: 34px;
+    top: 23%;
+    border-left: 2px solid #4f46e5;
+}
+.navbar-nav .nav-item .active.language{
+    color: #fff;
+    background-color: #4f46e5;
+}
+
+    </style>

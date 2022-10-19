@@ -1,0 +1,51 @@
+<div class="container-fluid background-indigo-50 d-flex justify-content-center align-items-center py-5 min-h-500" id="content">
+    {{ if or (eq (.Page.RelPermalink | truncate 6 ) "/blog/ …") (eq (.Page.RelPermalink | truncate 9 ) "/de/blog/ …") }}
+    <div class="container  pt-3 banner">
+        <div class="row">
+            
+            <div class="col-xl-6 col-lg-6 col-12">
+                <p class="mb-3 sub-banner text-uppercase ">{{ with .Site.GetPage "/blog" "/de/blog" }}{{ .Title }}{{ end }}</p>
+                <h1>{{ .Params.Title }}</h1>
+                <span class="d-block mt-3"><time datetime="{{ .Date.Format .Site.Params.dateformBlog }}">{{ .Date.Format .Site.Params.dateformBlog }}</time></span>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-12">
+                       
+            </div>
+        </div>
+    </div>
+    
+            {{ else if or (eq (.Page.RelPermalink | truncate 6 ) "/jobs/ …" "/produ …" "/publi …" "/solut …" "/reque …" "/de/pu …" "/de/so …") (eq (.Page.RelPermalink | truncate 9 ) "/de/jobs/ …") }}
+            <div class="container  py-5 banner">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-12">
+                        {{ if or (eq (.Page.RelPermalink | truncate 6 ) "/jobs/ …") (eq (.Page.RelPermalink | truncate 9 ) "/de/jobs/ …") }}<p class="mb-3 sub-banner text-uppercase ">Careers</p>{{ end }}
+                        <h1>{{ .Params.Title }}</h1>
+                        <p class="mb-0 fw-normal">{{ .Params.Description }}</p>
+                        
+                        
+                        {{if .IsHome}} <a href="" class="bnt p-3 mt-3">Request a Demo</a> {{end}}
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-12">
+                            
+                    </div>            
+            </div>
+        </div>
+            {{ else }}
+        <div class="container  py-5 banner">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-12">
+                    <h2 class="mb-3 sub-banner text-uppercase ">{{ .Params.Title }}</h2>
+                    <h1>{{ .Params.Subtitle }}</h1>
+                    <p class="mb-0 fw-normal">{{ .Params.Description }}</p>
+                    
+                    
+                    {{if .IsHome}} <a href="" class="bnt p-3 mt-3">Request a Demo</a> {{end}}
+                </div>
+                <div class="col-xl-6 col-lg-6 col-12">
+                        
+                </div>            
+        </div>
+    </div>
+    {{ end }}
+</div>
+

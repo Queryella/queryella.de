@@ -1,0 +1,5 @@
+{{ range . -}}
+<a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name | humanize }}" aria-label="Querylla on {{ .name | humanize }}"><i class="fab fa-{{ .name }} me-2"></i></i></a>
+{{- end -}}
+
+

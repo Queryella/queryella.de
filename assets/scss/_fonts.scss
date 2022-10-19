@@ -1,0 +1,67 @@
+/* outfit-300 - latin */
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local(""), url("../fonts/outfit/outfit-300.woff2") format("woff2"),
+      url("../fonts/outfit/outfit-300.woff") format("woff");
+  }
+  
+  /* outfit-regular - latin */
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(""), url("../fonts/outfit/outfit-regular.woff2") format("woff2"),
+      url("../fonts/outfit/outfit-regular.woff") format("woff");
+  }
+  
+  /* outfit-500 - latin */
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local(""), url("../fonts/outfit/outfit-500.woff2") format("woff2"),
+      url("../fonts/outfit/outfit-500.woff") format("woff");
+  }
+  
+  /* outfit-600 - latin */
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local(""), url("../fonts/outfit/outfit-600.woff2") format("woff2"),
+      url("../fonts/outfit/outfit-600.woff") format("woff");
+  }
+  
+  /* outfit-700 - latin */
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(""), url("../fonts/outfit/outfit-700.woff2") format("woff2"),
+      url("../fonts/outfit/outfit-700.woff") format("woff");
+  }
+  
+  /* outfit-800 - latin */
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 800;
+    src: local(""), url("../fonts/outfit/outfit-800.woff2") format("woff2"),
+      url("../fonts/outfit/outfit-800.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Outfit Var';
+    font-weight: 100 900;
+    font-display: swap;
+    src: local(""), url("../fonts/outfit/Outfit-VariableFont_wght.woff2") format("woff2");
+    
+  }
+  

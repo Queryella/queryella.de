@@ -1,0 +1,98 @@
+{{ define "main" }}
+
+<div class="container-fluid" >
+
+    <div class="container intro">
+        <div class="row pt-lg-5 pt-0 pb-5 my-5 align-items-start">
+        
+            <div class="col-xl-5 col-lg-5 col-12  d-flex flex-column justify-content-center position-relative pe-md-5" >
+                {{ $content := .Content }}
+         
+                {{ $content | safeHTML }}
+            
+            </div>
+            <div class="col-xl-7 col-lg-7 col-12  d-flex flex-column justify-content-center position-relative" >
+              <img class="img-fluid" src="{{ .Site.BaseURL }}/img/about-us/{{ .Params.image}}" alt="">
+                
+            
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" >
+    <div class="container-lg our-expertise py-5 background-gray-50">
+        <div class="row pt-lg-5 pt-0 grid-divider g-5 pt-5 w720">
+            <h2 class="mt-0 ms-md-4 mx-auto px-0">{{ with .Site.GetPage "/about" }}{{ .Params.middle_title }}{{ end }}</h2>
+        </div>
+        {{ $expertise := where .Site.RegularPages "Type" "about"}}
+        <div class="row pt-0 pb-5 my-3 grid-divider g-5 w720">
+            {{ range first 3 $expertise }}
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12  d-flex flex-column justify-content-center position-relative" >
+                <div class="icon-wrapper text-md-start text-center">
+                    <a class="zoom-wrapper">
+                        <img class="img-fluid" src="{{ .Site.BaseURL }}/img/about-us/expertise/{{ .Params.image }}" width="36px" alt="{{ .Title }}">
+                    </a>
+                </div>
+                <div class="content-wrapper text-md-start text-center">
+                    <a class="title mt-3 mb-0"  aria-label="Exspertise name: {{ .Title }}">{{ .Title }}</a>
+                    <span class="mt-2">
+                        {{ $content := .Content }}
+                        {{ $content | safeHTML }}
+                    </span>
+                </div>
+            </div>
+
+            
+            {{ end }}
+        </div>
+    </div>
+
+</div>
+      
+<div class="container-fluid" >
+    <div class="container team-members">
+        <div class="row pt-lg-5 pt-0 align-items-start">
+            
+            <div class="col-xl-12 col-lg-12 col-12  d-flex flex-column justify-content-center position-relative" >
+                <h2 class="mt-5 mx-auto ms-md-0">{{ with .Site.GetPage "/team-members" }}{{ .Title }}{{ end }}</h2>
+            </div>
+            
+        </div>
+        <div class="row pt-0 pb-5 my-5 align-items-start g-md-5">
+        {{ range (where .Site.RegularPages "Type" "team-members") }}
+        <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+            <div class="row mb-3 mb-lg-5 flex-column flex-md-row jus">
+                <div class="col-md-2 col-12 d-md-block d-flex justify-content-center">
+                    <img class="pb-3" src="{{ .Site.BaseURL }}/img/about-us/team-members/{{ .Params.image}}" alt="">
+                </div>
+                <div class="col-md-10 col-12 d-flex flex-column justify-content-center">
+                    <h3 class="mb-0 text-md-start text-center">{{ .Params.Name }}</h3>
+                    <span class="mb-2 mt-1 text-md-start text-center">{{ .Params.Position }}</span>
+                    <div class="col-xxl-12 col-xl-12 col-md-12 col-7 circle-icons text-md-start text-center mx-auto">
+                        {{ if .Page.Params.twitter }}
+                        <a href="https://twitter.com/{{ .Page.Params.twitter }}" class="me-1" target="_blank" rel="noopener noreferrer" aria-label="{{ .Page.Params.name }}'s Twitter"><img class="pb-3" src="{{ .Site.BaseURL }}/img/twitter.svg" alt="twitter icon"></a>
+                        {{ end }} 
+                        {{ if .Page.Params.email }}
+                        <a href="mailto:{{ .Page.Params.email }}" aria-label="{{ .Page.Params.name }}'s email"><img class="pb-3" src="{{ .Site.BaseURL }}/img/mail.svg" alt="web icon"></a>
+                        {{ end }}
+                       
+                    </div>
+                    <div class="bio pe-md-3">
+                        <p class="pe-3 text-justify">{{ .Params.Bio }}</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        {{ end }}
+    </div>
+
+
+
+
+
+
+</div>
+
+
+{{ end }}
