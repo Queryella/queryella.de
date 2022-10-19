@@ -1,0 +1,32 @@
+name: Hugo
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.85.0'
+
+    - name: Build
+      run: hugo --minify
+
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@5.1
+      with:
+        switches: -rvzh --delete
+        path: ./public/
+        remote_path: web
+        remote_host: ${{ secrets.DEPLOY_HOST }}        
+        remote_user: ${{ secrets.DEPLOY_USER }}
+        remote_key: ${{ secrets.DEPLOY_KEY }}    
