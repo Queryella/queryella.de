@@ -9,3 +9,8 @@ Options All -Indexes
 
 
 Header set Access-Control-Allow-Origin 'https://queryella.de'
+
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.queryella\.de [NC]
+RewriteRule ^(.*)$ https://queryella.de/$1 [L,R=301]
