@@ -86,11 +86,11 @@ paginate = 6
   
   [[params.social]]
     name = "twitter"
-    url  = "#"
+    url  = "https://twitter.com/queryella"
 
   [[params.social]]
     name = "linkedin"
-    url  = "#"
+    url  = "https://www.linkedin.com/company/queryella/"
 
 # Menus - English
 [languages]
