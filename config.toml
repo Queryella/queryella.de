@@ -193,20 +193,21 @@ paginate = 6
     [[languages.en.menu.footer3]]
     identifier = "imprint"
     name       = "Imprint"
-    url        = "/imprint"
+    url        = "https://www.tu-darmstadt.de/impressum/index.de.jsp"
     weight     = "1"
   
   [[languages.en.menu.footer3]]
     identifier = "privacy-policy"
     name       = "Privacy Policy"
-    url        = "/privacy-policy"
+    url        = "https://www.tu-darmstadt.de/datenschutzerklaerung.en.jsp"
     weight     = "2"
 
-  [[languages.en.menu.footer3]]
-    identifier = "terms-of-service"
-    name       = "Terms of Service"
-    url        = "/terms-of-service"
-    weight     = "3"
+# TODO Readd 
+#  [[languages.en.menu.footer3]]
+#    identifier = "terms-of-service"
+#    name       = "Terms of Service"
+#    url        = "/terms-of-service"
+#    weight     = "3"
 
 
 # Menus - German
@@ -308,20 +309,21 @@ paginate = 6
     [[languages.de.menu.footer3]]
     identifier = "imprint"
     name       = "Impressum"
-    url        = "/imprint"
+    url        = "https://www.tu-darmstadt.de/impressum/index.de.jsp"
     weight     = "1"
   
   [[languages.de.menu.footer3]]
     identifier = "privacy-policy"
     name       = "Privacy Policy"
-    url        = "/privacy-policy"
+    url        = "https://www.tu-darmstadt.de/datenschutzerklaerung.de.jsp"
     weight     = "2"
 
-  [[languages.de.menu.footer3]]
-    identifier = "terms-of-service"
-    name       = "Terms of Service"
-    url        = "/terms-of-service"
-    weight     = "3"
+# TODO Readd 
+#  [[languages.de.menu.footer3]]
+#    identifier = "terms-of-service"
+#    name       = "Terms of Service"
+#    url        = "/terms-of-service"
+#    weight     = "3"
 
 
 [privacy]
