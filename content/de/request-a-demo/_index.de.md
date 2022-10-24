@@ -1,15 +1,15 @@
 +++
-title = "Demo"
-subtitle = "Request a Demo"
+title = "Demo anfordern"
+subtitle = "Demo anfordern"
 email = "leonid.glanz@tu-darmstadt.de"
 phone= "+49 6151 16-21368"
 cta="on"
-cta_title="Prefer discussing over a call?"
-cta_button="Contact Us"
+cta_title="Ziehen Sie ein Gespräch vor?"
+cta_button="Anruf vereinbaren"
 cta_link="+49 6151 16-21368"
 +++
 
 
-## Try analysing your code for free with Queryella
+## Testen Sie die Analyse Ihres Codes kostenlos mit Queryella
 
-No credit card required, no strings attached.
+Keine Kreditkarte erforderlich, keine Bedingungen.

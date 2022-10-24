@@ -44,6 +44,11 @@ other = "Phone"
 [eMail]
 other = "E-mail"
 
+# Footer
+
+[footerDesc]
+other = "Queryella enables in-depth checks of mobile apps for security vulnerabilities and data protection violations."
+
 
 # 404.html
 #

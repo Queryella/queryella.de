@@ -217,19 +217,19 @@ paginate = 6
     subtitle  = ""
     contentDir   = "content/de"
     weight    = 2
-    copyright = 'Some rights reserved. Unless otherwise noted, content on this page is under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" title="License"> Creative Commons license</a>.'
+    copyright = ''
   
   # Main navigation Menu
 
   [[languages.de.menu.main]]
     identifier = "solutions"
-    name       = "Solutions"
+    name       = "Lösungen"
     url        = "/solutions/"
     weight     = "1"
 
   [[languages.de.menu.main]]
     identifier = "publications"
-    name       = "Publications"
+    name       = "Publikationen"
     url        = "/publications/"
     weight     = "2"
 
@@ -240,21 +240,21 @@ paginate = 6
 
   [[languages.de.menu.main]]
     identifier = "about"
-    name       = "About"
+    name       = "Über uns"
     url        = "/about/"
     parent     = "company"
     weight     = "1"
 
   [[languages.de.menu.main]]
     identifier = "jobs"
-    name       = "Jobs"
+    name       = "Karriere"
     url        = "/jobs/"
     parent     = "company"
     weight     = "2"
 
   [[languages.de.menu.main]]
     identifier = "contact"
-    name       = "Contact"
+    name       = "Kontakt"
     url        = "/contact/"
     weight     = "3"
 
@@ -262,7 +262,7 @@ paginate = 6
   # Menus on footer / First Vertical Menu
   [[languages.de.menu.footer1]]
     identifier = "home"
-    name       = "Home"
+    name       = "Startseite"
     url        = "/"
     weight     = "1"
   
@@ -274,13 +274,13 @@ paginate = 6
 
   [[languages.de.menu.footer1]]
     identifier = "about"
-    name       = "About"
+    name       = "Über uns"
     url        = "/about"
     weight     = "3"
     
   [[languages.de.menu.footer1]]
     identifier = "contact"
-    name       = "Contact"
+    name       = "Kontakt"
     url        = "/contact"
     weight     = "4"
 
@@ -288,19 +288,19 @@ paginate = 6
 
   [[languages.de.menu.footer2]]
     identifier = "solutions"
-    name       = "Solutions"
+    name       = "Lösungen"
     url        = "/solutions"
     weight     = "1"
   
   [[languages.de.menu.footer2]]
     identifier = "demo"
-    name       = "Request a Demo"
+    name       = "Demo anfordern"
     url        = "/request-a-demo"
     weight     = "2"
 
   [[languages.de.menu.footer2]]
     identifier = "publications"
-    name       = "Publications"
+    name       = "Publikationen"
     url        = "/publications"
     weight     = "3"
 
@@ -314,7 +314,7 @@ paginate = 6
   
   [[languages.de.menu.footer3]]
     identifier = "privacy-policy"
-    name       = "Privacy Policy"
+    name       = "Datenschutzerklärung"
     url        = "https://www.tu-darmstadt.de/datenschutzerklaerung.de.jsp"
     weight     = "2"
 

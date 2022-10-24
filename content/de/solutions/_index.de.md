@@ -3,8 +3,8 @@ title = "Lösungen"
 subtitle = "Lösungen"
 description = ""
 cta= "on"
-cta_title= "Try analysing your code for free"
-cta_button= "Request a Demo"
+cta_title= "Testen Sie die Analyse Ihres Codes kostenlos"
+cta_button= "Demo anfordern"
 cta_link= "request-a-demo"
 +++
 

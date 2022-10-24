@@ -44,6 +44,11 @@ other = "Telefon"
 [eMail]
 other = "E-Mail"
 
+# Footer
+
+[footerDesc]
+other = "Queryella ermöglicht die tiefgehende Überprüfung von mobilen Anwendungen auf Sicherheitslücken und Datenschutzverletzungen."
+
 # 404.html
 #
 [archives]
