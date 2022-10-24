@@ -26,13 +26,13 @@
     <div class="container counters">
         <div class="row pt-lg-5 pt-0 pb-5 my-5 align-items-start">
             <div class="col-xl-4 col-lg-4 col-12  d-flex flex-column justify-content-center position-relative" >
-                <h2 class="my-lg-0 my-5 mx-lg-0 mx-auto">Did you know?</h2>         </div>
+                <h2 class="my-lg-0 my-5 mx-lg-0 mx-auto">{{ i18n "didYouKnow" }}</h2>         </div>
                 {{ $counters := where .Site.RegularPages "Type" "counter"}}
             <div class="col-xl-7 col-lg-7 col-12  d-flex flex-column justify-content-center position-relative ms-6" >
                 {{ range $counters }}
                 <div class="row background-indigo-50 w-100 m-auto p-2 mb-3 d-flex align-items-center">
                     <div class="col-xl-2 col-lg-2 col-12"><h1 class="mb-0">{{.Title}}</h1> </div>
-                    <div class="col-xl-5 col-lg-5 col-12"><p class="mb-0">{{.Params.summary}}</p></div>
+                    <div class="col-xl-6 col-lg-6 col-12"><p class="mb-0">{{.Params.summary}}</p></div>
                 </div>
                 <div class="row">
                    <p>{{ .Content }}</p>
@@ -44,7 +44,7 @@
 </div>
 <div class="container-fluid" >  
     <div class="container supporters pb-lg-5 mb-lg-5">
-    <h2 class="text-center my-5">Supporters</h2>
+    <h2 class="text-center my-5">{{ i18n "supportersTitle" }}</h2>
             <div class="row justify-content-between align-items-center">
                 {{ $supporters := where .Site.RegularPages "Type" "supporters"}}
                 {{ range first 4 (where $supporters "Params.home" true) }}
@@ -56,9 +56,9 @@
     </div>
 </div>
 <div class="container-fluid" >  
-
+    
             <div class="container publications py-lg-5 my-lg-5">
-                <h2 class="text-center my-5">Featured Publication</h2>
+                <h2 class="text-center my-5">{{ i18n "featuredPublication" }}</h2>
                         <div class="row w-100">
                             {{ $publications := where .Site.RegularPages "Type" "publications" }}
                             {{ range first 1 ($publications) }}  
@@ -85,7 +85,7 @@
                             {{ end }}
                         </div>
                         <div class="row">
-                            <a href="/publications" class="see-all text-center py-5">See all Publications →</a>
+                            <a href='{{ "/publications/" | absLangURL }}' class="see-all text-center py-5">{{ i18n "allPublication" }} →</a>
                         </div>
                 </div>
 

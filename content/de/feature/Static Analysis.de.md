@@ -1,7 +1,7 @@
 +++
 
 title = "Statische Analyse"
-summary = "Identify data sources and sinks of an app, via static analysis and receive the data flow between these sources and sinks."
+summary = "Identifizieren Sie die Datenquellen und -senken einer App mittels statischer Analyse und erhalten Sie den Datenfluss zwischen diesen Quellen und Senken."
 image = "static-analysis.svg"
 weight= 4
 

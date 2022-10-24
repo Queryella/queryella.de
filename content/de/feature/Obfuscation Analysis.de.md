@@ -1,7 +1,7 @@
 +++
 
 title = "Obfuskations-Analyse"
-summary = "Deobfuscate strings and remove dynamic loading by replacing the dynamic code part with the actual code."
+summary = "Deobfuskieren Sie Strings und entfernen Sie dynamisches Laden, indem Sie den dynamischen Codeteil durch den tatsächlichen Code ersetzen."
 image = "obfuscation-analysis.svg"
 weight= 3
 

@@ -9,6 +9,25 @@ other = "Translations"
 [postAvailable]
 other = "Auch erhältlich in"
 
+# Homepage
+[homeEventLink]
+other = "Veranstaltungsdetails"
+
+[requestDemo]
+other = "Demo anfordern"
+
+[didYouKnow]
+other = "Wussten Sie schon?"
+
+[supportersTitle]
+other = "Förderer"
+
+[featuredPublication]
+other = "Ausgewählte Publikationen"
+
+[allPublication]
+other = "Alle Publikationen anzeigen"
+
 # 404.html
 #
 [archives]

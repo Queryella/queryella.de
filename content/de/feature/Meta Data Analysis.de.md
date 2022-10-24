@@ -1,7 +1,7 @@
 +++
 
 title = "Metadaten-Analyse"
-summary = "Automatically detect meta information and and further process them with our analysis engine."
+summary = "Erkennen Sie automatisch Metainformationen und verarbeiten Sie diese mit unserer Analyse-Engine weiter."
 image = "meta-data-analysis.svg"
 weight= 1
 

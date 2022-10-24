@@ -1,18 +1,19 @@
 +++
 
 title = "76%"
-summary = "out of 100,000 analyzed apps contain obfuscated strings."
+summary = "von 100.000 analysierten Anwendungen enthalten obfuskierte Zeichenketten."
 weight = 1
 +++
 
-An analysis using the tool StringHound showed that obfuscated strings hide: 
+Eine Analyse mit dem Tool StringHound hat gezeigt, dass obfuskierte Zeichenketten folgendes verbergen können:  
 
-- critical usages of URLs 
-- piggy-backed permissions
-- insecure cryptography algorithms
-- hard-coded credentials 
-- dangerous services
-- root commands
-- API keys
+- kritische Verwendungen von URLs 
+- huckepack Berechtigungen
+- unsichere Verschlüsselungsalgorithmen
+- hart kodierte Anmeldedaten 
+- gefährliche Dienste
+- Root-Befehle
+- API-Schlüssel
 
-Ad libraries are responsible for over 63% of obfuscated strings. Queryella does flag obfuscated privacy violations while other virus scanners fail to do so.
+
+Werbebibliotheken sind für über 63 % der obfuskierten Zeichenfolgen verantwortlich. Queryella zeigt obfuskierte Datenschutzverletzungen auf, während andere Virenscanner dies nicht tun.

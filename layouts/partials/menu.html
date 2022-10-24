@@ -53,7 +53,7 @@
              {{ if .Site.IsMultiLingual }}
               {{ partial "langswitcher_dropdown.html" . }} {{ end }} 
             <li class="nav-item ms-4 nav-item-lang"></li>
-              <a href="/request-a-demo/" class="bnt main-bnt">Request a Demo</a>
+              <a href='{{ "/request-a-demo/" | absLangURL }}' class="bnt main-bnt">Request a Demo</a>
             </li>
 
           </ul>
