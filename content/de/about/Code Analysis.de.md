@@ -1,6 +1,6 @@
 +++
 
-title = "Code Analysis"
+title = "Code-Analyse"
 image = "code-analysis.svg"
 weight= 1
 

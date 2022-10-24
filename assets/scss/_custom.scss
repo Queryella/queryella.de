@@ -358,7 +358,7 @@ ul.language-list {
       }
     }
   }
-  & .publications{
+  & .publications, .publikationen{
     //existing style...
     & .pub-articles-wrapper {
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
@@ -435,7 +435,7 @@ ul.language-list {
 }
 
 // About
-.about, .solutions, .lösungen {
+.about, .solutions, .lösungen, .über {
   //existing styles..
   & p {
     font-weight: 400;
@@ -764,7 +764,7 @@ ul.language-list {
 
 // Contact-Us
 
-.contact, .demo{
+.contact, .kontakt, .demo{
   // existing styles
   & .banner {
     //existing styles..
@@ -857,7 +857,7 @@ ul.language-list {
 }
 
 
-.careers, .job-single, .publications{
+.careers, .karriere, .job-single, .publications, .publikationen{
   //existing styles
   & .banner {
     //existing styles..
@@ -1217,7 +1217,8 @@ footer {
  .solutions .solution-features .content-wrapper span p, .lösungen .solution-features .content-wrapper span p {
   padding-right: 1rem;
   }
-.about .our-expertise .content-wrapper span p{
+.about .our-expertise .content-wrapper span p,
+.über .our-expertise .content-wrapper span p {
   padding: 0;
   text-align: left;
   margin-top: 1rem;

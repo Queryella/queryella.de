@@ -1,9 +1,9 @@
 +++
-title = "Publications"
+title = "Publikationen"
 subtitle = "Publications"
 description = ""
 cta="off"
 +++
 
 
-Publications presented in reverse chronological order.
+Die Publikationen sind in umgekehrter chronologischer Reihenfolge aufgeführt.

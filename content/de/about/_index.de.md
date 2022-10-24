@@ -1,15 +1,12 @@
 +++
-title = "About Us"
-subtitle = "Dedicated to a shared vision for privacy"
+title = "Über uns"
+subtitle = "Wir teilen eine gemeinsame Vision für den Schutz der Privatsphäre"
 description = ""
-middle_title = "Our Expertise"
-end_title = "The Team"
 image= "team.webp"
 cta="on"
-cta_title="Want to work with us?"
-cta_button="See Open Jobs"
+cta_title="Möchten Sie mit uns arbeiten?"
+cta_button="Offene Stellen ansehen"
 cta_link="jobs"
-layout = "about" 
 +++
 
 

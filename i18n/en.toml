@@ -28,6 +28,23 @@ other = "Featured Publication"
 [allPublication]
 other = "See all Publications"
 
+# About Us
+
+[ourExpertise]
+other = "Our Expertise"
+
+[theTeam]
+other = "The Team"
+
+# Contact/Request-a-Demo
+
+[phone]
+other = "Phone"
+
+[eMail]
+other = "E-mail"
+
+
 # 404.html
 #
 [archives]

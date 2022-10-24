@@ -2,14 +2,11 @@
 title = "About Us"
 subtitle = "Dedicated to a shared vision for privacy"
 description = ""
-middle_title = "Our Expertise"
-end_title = "The Team"
 image= "team.webp"
 cta="on"
 cta_title="Want to work with us?"
 cta_button="See Open Jobs"
 cta_link="jobs"
-layout = "about" 
 +++
 
 

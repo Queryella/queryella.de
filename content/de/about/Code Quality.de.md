@@ -1,6 +1,6 @@
 +++
 
-title = "Code Quality"
+title = "Code-Qualität"
 image = "code-quality.svg"
 weight= 3
 

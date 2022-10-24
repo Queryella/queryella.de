@@ -12,8 +12,8 @@
                 </div>
                 <div class="row">
                     <div class="col-12 ">
-                        <p class="mb-1">Phone: <a href="tel:{{ .Params.phone }}">{{ .Params.phone}}</a></p>
-                        <p class="mb-1">Email: <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>                      
+                        <p class="mb-1">{{ i18n "phone" }}: <a href="tel:{{ .Params.phone }}">{{ .Params.phone}}</a></p>
+                        <p class="mb-1">{{ i18n "eMail" }} <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>                      
                     </div>                
                 </div>
                 <br>

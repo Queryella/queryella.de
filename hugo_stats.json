@@ -93,6 +93,8 @@
       "closebtn",
       "cloud",
       "code",
+      "code-analyse",
+      "code-qualität",
       "codematch:",
       "col-12",
       "col-2",
@@ -234,6 +236,8 @@
       "justify-content-lg-end",
       "justify-content-md-start",
       "justify-content-start",
+      "karriere",
+      "kontakt",
       "l.",
       "l.,",
       "language-list",
@@ -376,6 +380,7 @@
       "pub-icons",
       "pub-icons2",
       "publications",
+      "publikationen",
       "px-0",
       "px-3",
       "px-5",
@@ -431,6 +436,7 @@
       "tracing",
       "uncovering",
       "und",
+      "uns",
       "unsafe",
       "us",
       "version",
@@ -446,7 +452,8 @@
       "wollny,",
       "won't",
       "your",
-      "zoom-wrapper"
+      "zoom-wrapper",
+      "über"
     ],
     "ids": [
       "1--anbieter",
@@ -475,7 +482,8 @@
       "navbar-mobile",
       "try-analysing-your-code-for-free-with-queryella",
       "was-wir-bieten",
-      "was-wir-erwarten"
+      "was-wir-erwarten",
+      "wie-können-wir-helfen"
     ]
   }
 }

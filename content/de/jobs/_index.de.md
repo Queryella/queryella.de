@@ -1,12 +1,12 @@
 +++
-title = "Careers"
-subtitle = "Work with us"
+title = "Karriere"
+subtitle = "Arbeiten Sie mit uns"
 description = ""
 cta="on"
-cta_title="Not finding anything which suits you? Send us your resume anyway."
-cta_button="Apply"
+cta_title="Sie haben nichts Passendes gefunden? Schicken Sie uns trotzdem Ihren Lebenslauf."
+cta_button="Bewerben Sie sich"
 cta_link="leonid.glanz@tu-darmstadt.de"
 +++
 
 
-Current open roles we have at Queryella are listed here.
+Die derzeit offenen Stellen bei Queryella sind hier aufgelistet.

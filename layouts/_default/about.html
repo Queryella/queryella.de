@@ -22,7 +22,7 @@
 <div class="container-fluid" >
     <div class="container-lg our-expertise py-5 background-gray-50">
         <div class="row pt-lg-5 pt-0 grid-divider g-5 pt-5 w720">
-            <h2 class="mt-0 ms-md-4 mx-auto px-0">{{ with .Site.GetPage "/about" }}{{ .Params.middle_title }}{{ end }}</h2>
+            <h2 class="mt-0 ms-md-4 mx-auto px-0">{{ i18n "ourExpertise" }}</h2>
         </div>
         {{ $expertise := where .Site.RegularPages "Type" "about"}}
         <div class="row pt-0 pb-5 my-3 grid-divider g-5 w720">
@@ -54,7 +54,7 @@
         <div class="row pt-lg-5 pt-0 align-items-start">
             
             <div class="col-xl-12 col-lg-12 col-12  d-flex flex-column justify-content-center position-relative" >
-                <h2 class="mt-5 mx-auto ms-md-0">{{ with .Site.GetPage "/team-members" }}{{ .Title }}{{ end }}</h2>
+                <h2 class="mt-5 mx-auto ms-md-0">{{ i18n "theTeam" }}</h2>
             </div>
             
         </div>

@@ -28,6 +28,22 @@ other = "Ausgewählte Publikationen"
 [allPublication]
 other = "Alle Publikationen anzeigen"
 
+# About Us
+
+[ourExpertise]
+other = "Unser Expertise"
+
+[theTeam]
+other = "Das Team"
+
+# Contact/Request-a-Demo
+
+[phone]
+other = "Telefon"
+
+[eMail]
+other = "E-Mail"
+
 # 404.html
 #
 [archives]
