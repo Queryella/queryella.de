@@ -1,5 +1,5 @@
 +++
-title = "Homepage"
+title = "Queryella"
 subtitle = "In-depth code analysis for your security & privacy"
 description = "Queryella enables in-depth checks of mobile apps for security vulnerabilities and data protection violations and helps to protect users and companies."
 event_title= "We attend the Start-up & Innovation Day 2022"

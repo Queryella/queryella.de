@@ -50,8 +50,8 @@
             </li>
           
             {{ end }}
-            <!-- {{ if .Site.IsMultiLingual }}
-              {{ partial "langswitcher_dropdown.html" . }} {{ end }} -->
+             {{ if .Site.IsMultiLingual }}
+              {{ partial "langswitcher_dropdown.html" . }} {{ end }} 
             <li class="nav-item ms-4 nav-item-lang"></li>
               <a href="/request-a-demo/" class="bnt main-bnt">Request a Demo</a>
             </li>
@@ -73,19 +73,7 @@
             <div class="container pt-4">
               {{- $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" -}}
               <ul class="menu__list">
-                <!-- <li class="menu__item menu__dropdown menu__link">
-                  <a href="#"><span class="menu__text">Products</span> <label class="drop-icon" for="Products">▾</label></a>
-                  <input type="checkbox" id="Products">
-                {{ $products := where .Site.RegularPages "Type" "products"}}
-                  <ul class="sub-menu">
-                    {{ range $products }}
-                      <li>
-                          <a class="nav-link" aria-current="page" href="{{ .Permalink }}">{{ .Title }}</a>
-                        
-                      </li>
-                      {{ end }}
-                  </ul>
-                </li> -->
+              
               {{- range .Site.Menus.main -}}
               
               <li class="menu__item menu__dropdown menu__link">
@@ -109,8 +97,8 @@
               </li>
               {{ end }}
               <li class="menu__item menu__dropdown menu__link"> 
-                <!-- {{ if .Site.IsMultiLingual }}
-              {{ partial "langswitcher_dropdown_mobile.html" . }} {{ end }} -->
+               {{ if .Site.IsMultiLingual }}
+              {{ partial "langswitcher_dropdown_mobile.html" . }} {{ end }} 
               </li>
             </ul>
              
