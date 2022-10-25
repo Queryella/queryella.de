@@ -235,7 +235,7 @@ paginate = 6
 
   [[languages.de.menu.main]]
     identifier = "company"
-    name       = "Company"
+    name       = "Firma"
     weight     = "3"
 
   [[languages.de.menu.main]]
