@@ -30,14 +30,14 @@
             <li class="nav-item ms-4  {{ if .HasChildren }} drop-list {{ end }}">
               {{ if .HasChildren }}
               <a class="nav-link {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}} drop-ref " {{ if eq
-                ($firstUrlElement|lower) (.URL|lower) }}aria-current="page" {{end}} for="{{ .Name }}1" >{{ .Name }} <label class="drop-icon" for="{{ .Name }}1">▾</label> </a>
+                ($firstUrlElement|lower) (.URL|lower) }}aria-current="page" {{end}} for="{{ .Name }}1" >{{ .Name }} <label class="drop-icon no-lang-label" for="{{ .Name }}1">▾</label> </a>
                 {{ else }}
                 <a class="nav-link {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}}" {{ if eq
                   ($firstUrlElement|lower) (.URL|lower) }}aria-current="page" {{end}} href="{{ .URL | absLangURL }}">{{ .Name }} </a>
                 {{ end }}
                 {{ if .HasChildren }}
                 
-                <input type="checkbox" id="{{ .Name }}1">
+                <input type="checkbox" id="{{ .Name }}1" class="no-lang-input">
                   <ul class="sub-menu">
                       {{ range .Children }}
                       <li >
@@ -119,20 +119,53 @@
     document.getElementById("navbar-mobile").style.height = "0%";
   }
 
+// Make parent background white when open dropdown
+const allInputs = document.querySelectorAll(".navbar-nav input");
 
-  const allInputs = document.querySelectorAll(".navbar-nav input");
-
-  allInputs.forEach(input => {
-    input.addEventListener("click", e => {
-      if (e.target.checked) {
-        e.target.parentElement.style.background = "#fff";
-        // e.target.parentElement.parentElement.style.background = "linear-gradient(180deg, #eef2ff 42.5%, transparent 0)";
-      } else {
-        e.target.parentElement.style.background = "transparent";
-        // e.target.parentElement.parentElement.style.background = "linear-gradient(180deg, #eef2ff 100%, transparent 0)";
-      }
-    })
+allInputs.forEach(input => {
+  input.addEventListener("click", e => {
+    if (e.target.checked) {
+      e.target.parentElement.style.background = "#fff";
+      
+    } else {
+      e.target.parentElement.style.background = "transparent";
+    }
   })
+})
+
+// Close dropdown when click outside section
+
+function validate(f){
+var f = f || window.event, // make this works in different browsers 
+  checkNavbarL = document.getElementById("Language"),  // input
+  checkboxNavbarL = document.querySelector(".lang-label");// label
+  
+  if ([checkNavbarL, checkboxNavbarL].indexOf(f.target) < 0 && checkNavbarL.checked) {
+      checkNavbarL.checked = false;
+      document.querySelector(".lang-list").style.background = "transparent";
+      return false;
+  }
+};
+
+function validate(d){
+var d = d || window.event, // make this works in different browsers 
+  checkNavbar = document.querySelector(".no-lang-input"),  // input
+  checkboxNavbar = document.querySelector(".no-lang-label");// label
+  
+  if ([checkNavbar, checkboxNavbar].indexOf(d.target) < 0 && checkNavbar.checked) {
+      checkNavbar.checked = false;
+      document.querySelector(".drop-list").style.background = "transparent";
+      return false;
+  }
+};
+document.addEventListener("click", validate);
+var storeDropdown = document.querySelector(".sub-menu"); // unordered list dropdown-menu
+
+storeDropdown.addEventListener("click", function(d) {
+  d.stopPropagation();
+  f.stopPropagation();
+});
+
 
   </script>
   
