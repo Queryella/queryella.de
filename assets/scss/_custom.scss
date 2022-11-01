@@ -1297,6 +1297,16 @@ footer {
   // position: relative;
   width: 100%;
 }
+.menu__item.menu__dropdown input:checked + .sub-menu{
+  border: none;
+  padding-left: 20px;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  position: relative;
+  max-width: 100%;
+
+}
 .navbar-nav .nav-item input:checked {
   background: #fff;
 }
