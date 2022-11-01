@@ -3,6 +3,7 @@
 title="Mind the GAP: Security & Privacy Risks of Contact Tracing Apps"
 publication_date="2020"
 authors = "L. Baumgärtner et al"
+publication_link= "https://doi.org/10.1109/TrustCom50675.2020.00069"
 weight= 4
 +++
 

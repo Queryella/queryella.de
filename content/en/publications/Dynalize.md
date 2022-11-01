@@ -3,6 +3,7 @@
 title="Dynalize: Dynamic Analysis of Mobile Apps in a Platform-as-a-Service Cloud"
 publication_date="2015"
 authors = "P. Graubner, L. Baumgärtner, P. Heckmann, M. Müller and B. Freisleben"
+publication_link= "https://doi.org/10.1109/CLOUD.2015.126"
 weight= 7
 +++
 

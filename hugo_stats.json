@@ -338,6 +338,8 @@
       "news-link",
       "news-title",
       "news-wrapper",
+      "no-lang-input",
+      "no-lang-label",
       "not",
       "obfuscated",
       "obfuscation",

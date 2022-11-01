@@ -3,6 +3,7 @@
 title="Uncovering the Hidden Dangers: Finding Unsafe Go Code in the Wild"
 publication_date="2021"
 authors = "J. Lauinger, L. Baumgärtner, A. -K. Wickert and M. Mezini"
+publication_link= "https://doi.org/10.1109/TrustCom50675.2020.00063"
 weight= 2
 +++
 

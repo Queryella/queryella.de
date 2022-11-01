@@ -2,6 +2,7 @@
 title="Why Eve and Mallory love Android: An analysis of Android SSL (in)security"
 publication_date="2012"
 authors = "Sascha Fahl, Marian Harbach, Thomas Muders, Lars Baumgärtner, Bernd Freisleben, and Matthew Smith"
+publication_link= "https://doi.org/10.1145/2382196.2382205"
 weight= 9
 +++
 
