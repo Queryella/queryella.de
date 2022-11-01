@@ -1296,20 +1296,12 @@ footer {
   display: block;
   max-width: 100%;
   background: #fff;
-  position: relative;
+  // position: relative;
+  width: 100%;
 }
-
-.menu__item.menu__dropdown input:checked + .sub-menu{
-    border: none;
-    padding-left: 20px;
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    position: relative;
-    max-width: 100%;
-
+.navbar-nav .nav-item input:checked {
+  background: #fff;
 }
-
 .menu__item.menu__dropdown input {
   display: none;
 }
@@ -1322,29 +1314,43 @@ footer {
 }
 .navbar-nav .nav-item .drop-icon{
   text-align: right;
-    position: relative;
+  position: relative;
 }
-.navbar-nav .nav-item:nth-child(3n + 3){
+.drop-list,
+.lang-list{
   padding-right: 10px;
-  & .sub-menu{
-    & a{
-      padding: 7px .5rem;
+  position: relative;
+  min-width: 80px;
+}
+
+.drop-list .sub-menu,
+.lang-list .sub-menu{
+  & a{
+    padding: 7px .5rem;
+    &:hover{
+      text-decoration: underline;
+      background: $indigo-400;
+      color: $white;
     }
   }
 }
-.navbar-nav .nav-item:nth-child(3n + 3) a {
+a.drop-ref,
+a.lang-ref {
   position: relative;
-  
+  display: inline-flex;
 }
-.navbar-nav .nav-item:nth-child(3n + 3) a label {
-  cursor: pointer;
-  width: 100%;
+a.drop-ref label,
+.lang-label {
+    cursor: pointer;
+    width: 100%;
     z-index: 99999999;
     left: 5px;
-    position: absolute;
+    position: absolute!important;
 }
-.navbar-nav .nav-item:nth-child(3n + 3) a label::selection,
-.navbar-nav .nav-item:nth-child(3n + 3) a::selection {
+a.drop-ref label::selection,
+.a.drop-ref::selection,
+a.lang-ref label::selection,
+a.lang-ref::selection {
   background: transparent;
 }
 // Accessibility
@@ -1376,4 +1382,15 @@ footer {
   padding: 1rem;
   text-decoration: none;
   z-index: 100000;
+}
+
+/// change nav bar structure
+
+
+.navbar-nav {
+  display: block;
+
+  & li.nav-item {
+    display: inline-block;
+  }
 }

@@ -27,9 +27,9 @@
             {{- $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" -}}
             {{- range .Site.Menus.main -}}
             
-            <li class="nav-item ms-4">
+            <li class="nav-item ms-4  {{ if .HasChildren }} drop-list {{ end }}">
               {{ if .HasChildren }}
-              <a class="nav-link {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}}" {{ if eq
+              <a class="nav-link {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}} drop-ref " {{ if eq
                 ($firstUrlElement|lower) (.URL|lower) }}aria-current="page" {{end}} for="{{ .Name }}1" >{{ .Name }} <label class="drop-icon" for="{{ .Name }}1">▾</label> </a>
                 {{ else }}
                 <a class="nav-link {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}}" {{ if eq
@@ -52,8 +52,8 @@
             {{ end }}
              {{ if .Site.IsMultiLingual }}
               {{ partial "langswitcher_dropdown.html" . }} {{ end }} 
-            <li class="nav-item ms-4 nav-item-lang"></li>
-              <a href='{{ "/request-a-demo/" | absLangURL }}' class="bnt main-bnt">{{ i18n "requestDemo" }}</a>
+            <!-- <li class="nav-item ms-4 nav-item-lang"></li> -->
+              <a href='{{ "/request-a-demo/" | absLangURL }}' class="bnt main-bnt ms-4">{{ i18n "requestDemo" }}</a>
             </li>
 
           </ul>
@@ -126,10 +126,10 @@
     input.addEventListener("click", e => {
       if (e.target.checked) {
         e.target.parentElement.style.background = "#fff";
-        e.target.parentElement.parentElement.style.background = "linear-gradient(180deg, #eef2ff 42.5%, transparent 0)";
+        // e.target.parentElement.parentElement.style.background = "linear-gradient(180deg, #eef2ff 42.5%, transparent 0)";
       } else {
         e.target.parentElement.style.background = "transparent";
-        e.target.parentElement.parentElement.style.background = "linear-gradient(180deg, #eef2ff 100%, transparent 0)";
+        // e.target.parentElement.parentElement.style.background = "linear-gradient(180deg, #eef2ff 100%, transparent 0)";
       }
     })
   })

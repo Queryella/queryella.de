@@ -1,15 +1,16 @@
-<li class="nav-item ms-lg-4">
+<li class="nav-item ms-lg-4 lang-list">
     
-    <div class="dropdown">
-        <button type="button" class="dropdown__title nav-link " aria-expanded="false" aria-controls="language-dropdown">
+    
+        <a class="dropdown__title nav-link lang-ref " aria-expanded="false" aria-controls="language-dropdown">
         {{ range .AllTranslations }}
             {{ if eq $.Site.Language.LanguageName "English" }}
             {{ if eq .Language.LanguageName "Deutsch" }} English  {{ end }}{{end }}
             {{ if eq $.Site.Language.LanguageName "Deutsch" }}
             {{ if eq .Language.LanguageName "English" }} Deutsch {{ end }}{{ end }}
         {{ end }}
-        <span class="drop-icon" for="Language">▾</span>
-        </button>
+        <label class="drop-icon lang-label" for="Language">▾</label>
+        </a>
+        <input type="checkbox" id="Language">
         <ul class="language-list sub-menu" id="language-dropdown">                 
             {{ if .IsTranslated }}
                 
@@ -20,6 +21,5 @@
                 {{ end }}
             {{ end }}
         </ul>
-    </div>
     
 </li>
