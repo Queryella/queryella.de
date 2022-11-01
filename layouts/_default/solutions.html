@@ -3,7 +3,7 @@
 <div class="container-fluid" >
 
     <div class="container intro">
-        <div class="row pt-lg-5 pt-0 pb-5 my-5 align-items-start">
+        <div class="row pt-lg-5 pt-0 pb-4 align-items-start">
         
             <div class="col-xl-8 col-lg-8 col-12  d-flex flex-column justify-content-center position-relative pe-md-5" >
                 {{ $content := .Content }}
@@ -20,12 +20,12 @@
     </div>
 </div>
 <div class="container-fluid" >
-    <div class="container-lg solution-features py-5 background-gray-50 mb-5">
+    <div class="container-lg solution-features py-3 background-gray-50 mb-5">
         <!-- <div class="row pt-lg-5 pt-0 grid-divider g-5">
             <h2 class="mt-0 ms-4 px-0">{{ with .Site.GetPage "/solutions" }}{{ .Title }}{{ end }}</h2>
         </div> -->
         {{ $solutions := where .Site.RegularPages "Type" "solutions"}}
-        <div class="row pt-0 pb-5 my-3 grid-divider g-5">
+        <div class="row pt-0 pb-5 my-3 grid-divider g-4">
             {{ range $solutions }}
             <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-3 d-flex justify-content-center position-relative" >
                 <div class="icon-wrapper">

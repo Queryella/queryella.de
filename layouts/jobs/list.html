@@ -1,15 +1,15 @@
 {{ define "main" }}
-<main class="py-5">
+<main class="py-2">
     <div class="container-fluid">
         <div class="container">
-            <div class="row content py-5 g-md-5">
+            <div class="row py-5 g-md-5">
                 {{ $content := .Content }}
                 {{ $content | safeHTML }}
             </div>
            
 
            
-            <div class="row jobs py-5 g-md-5">     
+            <div class="row jobs py-2 mb-md-5 g-md-5">     
             {{ range .Site.Taxonomies.departments }}
                 <!-- <h3 class=" mb-3"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> </h3> -->
                 {{ range .Pages }}

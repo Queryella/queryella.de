@@ -20,12 +20,12 @@
     </div>
 </div>
 <div class="container-fluid" >
-    <div class="container-lg our-expertise py-5 background-gray-50">
+    <div class="container-lg our-expertise py-3 background-gray-50">
         <div class="row pt-lg-5 pt-0 grid-divider g-5 pt-5 w720">
             <h2 class="mt-0 ms-md-4 mx-auto px-0">{{ i18n "ourExpertise" }}</h2>
         </div>
         {{ $expertise := where .Site.RegularPages "Type" "about"}}
-        <div class="row pt-0 pb-5 my-3 grid-divider g-5 w720">
+        <div class="row pt-0 pb-5 my-3 grid-divider g-3 w720">
             {{ range first 3 $expertise }}
             <div class="col-xl-4 col-lg-4 col-md-6 col-12  d-flex flex-column justify-content-center position-relative" >
                 <div class="icon-wrapper text-md-start text-center">
@@ -58,7 +58,7 @@
             </div>
             
         </div>
-        <div class="row pt-0 pb-5 my-5 align-items-start g-md-5">
+        <div class="row pt-0 pb-5 my-3 align-items-start g-md-5">
         {{ range (where .Site.RegularPages "Type" "team-members") }}
         <div class="col-xl-6 col-lg-6 col-md-12 col-12">
             <div class="row mb-3 mb-lg-5 flex-column flex-md-row jus">
