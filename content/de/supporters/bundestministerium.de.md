@@ -1,7 +1,7 @@
 +++
 name = "Bundestministerium"
-image = "bundestministerium.png"
-link = "#"
+image = "bundestministerium.svg"
+link = "https://www.bmbf.de/"
 weight = 4
 home = true
 +++

@@ -1,7 +1,7 @@
 +++
 name = "Technische Universität Darmstadt"
 image = "universitat.png"
-link = "#"
+link = "https://www.tu-darmstadt.de/"
 weight = 1
 home = true
 +++

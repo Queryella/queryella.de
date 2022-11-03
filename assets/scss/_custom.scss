@@ -352,7 +352,6 @@ ul.language-list {
     & img {
       // mix-blend-mode: luminosity;
       transition: all ease-in 0.5s;
-      max-width: 220px;
       &:hover {
         mix-blend-mode: normal;
       }
@@ -1144,7 +1143,7 @@ footer {
     }
 
   }
-}
+ }
 
 // Media queries
 
