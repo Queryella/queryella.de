@@ -31,7 +31,7 @@
                         </div>
                         <div class="col-md-6 col-12 d-flex flex-column justify-content-end align-items-md-end align-items-start">
                             <div class="row mb-2 ms-md-0 ms-1 job-type p-2">{{ .Params.Job_type }}</div>
-                            <div class="row job-close-date"> <img src="{{ .Site.BaseURL }}/img/svg/calendar.svg" alt="" class="job-icons2" >Closing on {{ .Params.Close_date }}</div>
+                            <div class="row job-close-date"> <img src="{{ .Site.BaseURL }}/img/svg/calendar.svg" alt="" class="job-icons2" >{{ i18n "closingOn" }} {{ .Params.Close_date }}</div>
                         </div>
                     </div>
                 

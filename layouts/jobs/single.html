@@ -58,7 +58,7 @@
                                     <img src="{{ .Site.BaseURL }}/img/svg/location.svg" alt="" class="pe-1 job-icons"> {{ .Params.Location}}
                                 </div>   
                             
-                                <div class="col-12 py-1"> <img src="{{ .Site.BaseURL }}/img/svg/calendar.svg" alt="" class="pe-1 job-icons2" >Closing on {{ .Params.Close_date }}</div>
+                                <div class="col-12 py-1"> <img src="{{ .Site.BaseURL }}/img/svg/calendar.svg" alt="" class="pe-1 job-icons2" >{{ i18n "closingOn" }}  {{ .Params.Close_date }}</div>
                             </div>
                             
 

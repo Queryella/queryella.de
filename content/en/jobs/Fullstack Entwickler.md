@@ -1,11 +1,10 @@
 +++
 
-title="Fullstack Entwickler:in"
+title="Fullstack Developer"
 location="Remote, Germany / Darmstadt"
 job_type="Full-time"
 close_date="January 7, 2023"
-departments = [ "Design" ]
-tags = [ "Product" ]
+departments = [ "Engineering" ]
 
 +++
 
@@ -13,38 +12,37 @@ tags = [ "Product" ]
 
 
 
-Die weite Verbreitung von Apps auf Smartphones birgt nicht nur viele Vorteile, sondern auch erhebliche Sicherheitsrisiken: So zeigen Untersuchungen, dass viele weit verbreitete Apps verschleierte Zeichenketten enthalten, die auf Eingriffe in die Privatsphäre und Sicherheit des Nutzers hinweisen. Zur Bewertung von Risiken und Analyse von Apps entwickeln wir im Rahmen des Startup-Projekts Queryella eine Plattform, die unterschiedliche App-Scanner, z.B. zur Risikobewertung von eingesetzten Crypto-Routinen oder dem Deobfuskieren von versteckten Daten und Funktionen, vereint, und unterschiedlichen Zielgruppen zugänglich macht. 
+The widespread use of apps on smartphones not only brings many advantages, but also significant security risks: For example, research shows that many widely used apps contain obfuscated strings that indicate intrusions into the user's privacy and security. To assess risks and analyze apps, we are developing a platform as part of the startup project Queryella that combines different app scanners, e.g. for risk assessment of deployed crypto routines or deobfuscation of hidden data and functions, and makes them accessible to different target groups. 
 
-Queryella ist ein vom Bundesforschungsministerium in der Programmlinie StartupSecure gefördertes Gründungsprojekt aus der TU Darmstadt heraus. Unser Team besteht aus führenden Wissenschaftler:Innen mit langjährige Erfahrung und umfassende Expertise im Bereich der statischen Analyse und IT-Sicherheit sowie Personen mit langjähriger Management- und Vertriebserfahrung. 
+Queryella is a startup project out of the TU Darmstadt, funded by the German Federal Ministry of Education and Research in the StartupSecure program line. Our team consists of leading scientists with many years of experience and comprehensive expertise in the field of static analysis and IT security as well as people with many years of management and sales experience.
 
-Zur Ergänzung unseres Teams suchen wir zum 01.04.2023 eine(n) Full-Stack-Entwickler:In für eine Code-Analyseplattform zunächst befristet bis 31.03.2024 (Voll-/ Teilzeit).
-
-
-
-## Was wir erwarten
-
-- Du erarbeitest ein Konzept für eine skalierbare und flexible Architektur, die einfach um unterschiedliche Backends ergänzt werden kann, und implementierst dieses System mit aktuellen Technologien, um damit Millionen von Apps zu untersuchen und die Ergebnisse zu speichern.
-- Du tauscht dich aktiv mit den anderen Projektmitgliedern aus bzgl.Planung, Organisation und Dokumentation der Plattform und einer passenden Webanbindung.
-- Du bist eigenverantwortlich und selbstorganisiert für den kompletten IT-Produktlebenszyklus verantwortlich. In Deiner Rolle als Full-Stack-Entwickler wählst Du den richtigen Lösungsweg aus, mit dem wir potentielle Kunden schnell voranbringen.
-- Außerdem wirkst Du an der technologischen Weiterentwicklung der Plattform und der unterschiedlichen Backends mit.
-
-## Dein Profil
-
-- Deine Schwerpunkte liegen in den Bereichen Backend oder Fullstack. Zudem wäre es von Vorteil, wenn Du Dich mit aktuellen Programmiersprachen und Technologien auskennst, wie z.B. - - Golang, TypeScript, Docker, Linux, gRPC, PostgreSQL, Redis, Micro-Services bzw. Serverless Computing, verteilte, skalierbare Architekturen und Continuous Integration
-- Im Idealfall hast du als Entwickler und System Architekt bereits erste Erfahrungen in großen Projekten gesammelt.
-- Du verfügst über ein abgeschlossenes Studium in (Wirtschafts-) Informatik, Mathematik, Physik oder vergleichbaren Studiengängen sowie über sehr gute Deutsch- und Englischkenntnisse.
-- Du begeisterst Dich für Datenschutz und IT-Sicherheit und möchtest diese Themen mit uns gemeinsam vorantreiben.
-
-## Was wir bieten
-
-- Mitarbeit in einem spannenden und potenzialträchtigem Startup-Projekt. 
-- Interessante Aufgaben mit Gestaltungs- und Entwicklungsmöglichkeiten in einem potenzialträchtigen Gründungsvorhaben
-- Gute Einarbeitung und regelmäßiges Feedback sowie offene und freundliche Arbeitsatmosphäre
+To complement our team, we are looking for a Full-Stack Developer for a code analysis platform as of 01.04.2023, initially limited until 31.03.2024 (full/part time).
 
 
-Wir streben eine Erhöhung des Anteils der Frauen am Personal an und fordert deshalb besonders Frauen auf, sich zu bewerben. Bewerber:innen mit einem Grad der Behinderung von mindestens 50 oder diese Gleichgestellte werden bei gleicher Eignung bevorzugt. 
 
-Die Vergütung erfolgt nach dem Tarifvertrag für die Technische Universität Darmstadt (TV - TU Darmstadt). Teilzeitbeschäftigung ist grundsätzlich möglich.
-Bewerbungen sind elektronisch mit den üblichen Unterlagen in einer PDF-Datei unter Angabe der Kenn-Nummer an **Herrn Dr. Leonid Glanz**  leonid.glanz@tu-darmstadt.de zu senden.
+## What we expect
 
-Mit dem Absenden deiner Bewerbung willigst du ein, dass deine Daten zum Zwecke des Stellenbesetzungsverfahrens gespeichert und verarbeitet werden. Du findest unsere Datenschutzerklärung auf unserer Homepage.
+- You will develop a concept for a scalable and flexible architecture that can be easily extended by different backends and implement this system with current technologies to examine millions of apps and store the results.
+- You actively communicate with the other project members regarding planning, organization and documentation of the platform and a suitable web connection.
+- You are responsible for the complete IT product lifecycle in a self-dependent and self-organized way. In your role as a full-stack developer, you will select the right solution path that will enable us to move potential customers forward quickly.
+- You also contribute to the technological development of the platform and the different backends.
+
+## Your profile
+
+- Your focus lies in the areas of backend or fullstack. In addition, it would be an advantage if you are familiar with current programming languages and technologies, such as - - Golang, TypeScript, Docker, Linux, gRPC, PostgreSQL, Redis, micro-services or serverless computing, distributed, scalable architectures and continuous integration.
+- Ideally, you have already gained initial experience in large projects as a developer and system architect.
+- You have a degree in (business) computer science, mathematics, physics or comparable courses of study as well as very good German and English skills.
+- You are enthusiastic about data protection and IT security and would like to advance these topics together with us.
+
+## What we offer
+
+- Collaboration in an exciting and high-potential startup project.
+- Interesting tasks with design and development opportunities in a high-potential startup project.
+- Good induction and regular feedback as well as an open and friendly working atmosphere
+
+
+We aim to increase the proportion of women on our staff and therefore particularly encourage women to apply. Applicants with a degree of disability of at least 50 or equivalent will be given preference in the case of equal suitability.
+
+Remuneration is in accordance with the collective bargaining agreement for the Technische Universität Darmstadt (TV - TU Darmstadt). Part-time employment is generally possible. Applications should be sent electronically with the usual documents in a PDF file, quoting the identification number, to **Dr. Leonid Glanz** leonid.glanz@tu-darmstadt.de.
+
+By sending your application, you agree that your data will be stored and processed for the purpose of the recruitment process. You can find our privacy policy on our homepage.

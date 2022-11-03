@@ -36,6 +36,14 @@ other = "Unser Expertise"
 [theTeam]
 other = "Das Team"
 
+# Jobs
+
+[careers]
+other = "Karriere"
+
+[closingOn]
+other = "Endet am"
+
 # Contact/Request-a-Demo
 
 [phone]

@@ -158,7 +158,6 @@
       "design",
       "detection",
       "dim",
-      "divider-gray",
       "drop-icon",
       "drop-list",
       "drop-ref",
@@ -503,7 +502,10 @@
       "try-analysing-your-code-for-free-with-queryella",
       "was-wir-bieten",
       "was-wir-erwarten",
-      "wie-können-wir-helfen"
+      "what-we-expect",
+      "what-we-offer",
+      "wie-können-wir-helfen",
+      "your-profile"
     ]
   }
 }
