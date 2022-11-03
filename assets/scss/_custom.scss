@@ -1316,12 +1316,11 @@ footer {
 .menu__item.menu__dropdown {
   & a{
     position: relative;
-    display: inline-block;
   }
 
   & label{
     cursor: pointer;
-    width: 120%;
+    width: 100%;
     z-index: 99999999;
     position: absolute!important;
     left: 0;
