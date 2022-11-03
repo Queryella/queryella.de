@@ -61,7 +61,7 @@
                 <h2 class="text-center my-5">{{ i18n "featuredPublication" }}</h2>
                         <div class="row w-100">
                             {{ $publications := where .Site.RegularPages "Type" "publications" }}
-                            {{ range first 1 ($publications) }}  
+                            {{ range first 3 ($publications) }}  
                             <div class="pub-articles-wrapper py-3 m-3 row d-flex flex-column-reverse flex-md-row" >
                                 <div class="col-md-10 col-12">
                                     <div class="row mb-3">
