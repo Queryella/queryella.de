@@ -391,6 +391,7 @@ ul.language-list {
         font-size: 14px;
         color: $gray-500;
         & a{
+          word-break: break-word;
           color: $indigo-600;
           &:hover{
             color: $indigo-800;
@@ -1078,7 +1079,8 @@ ul.language-list {
 }
 
 .job-single{
-  & p {
+  & .content{
+    & p,ul {
     font-size: 18px;
     line-height: 157.52%;
     margin-bottom: 2rem;
@@ -1087,7 +1089,7 @@ ul.language-list {
   & h1,h2,h3,h4,h5,h6{
     padding-bottom: 0.75rem;
   }
-  
+}
 }
 
 ///..Form after submit
@@ -1188,8 +1190,6 @@ footer {
 }
 @media (min-width: 768px) {
   
-
-
   .sub-menu{
     padding-left: 0;
     display: none;
@@ -1231,8 +1231,13 @@ footer {
   max-width: 720px;
   margin: auto;
 }
+.drop-list .sub-menu,
+.lang-list .sub-menu{
+  & a{
+    padding: 0px 1rem!important; 
 }
-
+}
+}
 
 
 //@to optimise
