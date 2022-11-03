@@ -23,3 +23,25 @@
     </div>
     
 </li>
+ <script>
+
+function validate(m){
+var m = m || window.event, // make this works in different browsers 
+  checkNavbarM = document.getElementById('Company'),  // input
+  checkboxNavbarM = document.querySelector(".no-lang-label-m");// label
+  
+  if ([checkNavbarM, checkboxNavbarM].indexOf(m.target) < 0 && checkNavbarM.checked) {
+      checkNavbarM.checked = false;
+      document.querySelector(".drop-list").style.background = "transparent";
+      return false;
+  }
+};
+document.addEventListener("click", validate);
+var storeDropdownM = document.querySelector(".sub-menu-m"); // unordered list dropdown-menu
+
+storeDropdownM.addEventListener("click", function(m) {
+//   m.stopPropagation();
+});
+
+
+ </script>

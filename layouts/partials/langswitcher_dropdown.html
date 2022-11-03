@@ -23,3 +23,24 @@
         </ul>
     
 </li>
+
+<script>
+
+function validate(f){
+    var f = f || window.event, // make this works in different browsers 
+      checkNavbarL = document.getElementById("Language"),  // input
+      checkboxNavbarL = document.querySelector(".lang-label");// label
+      
+      if ([checkNavbarL, checkboxNavbarL].indexOf(f.target) < 0 && checkNavbarL.checked) {
+          checkNavbarL.checked = false;
+          document.querySelector(".lang-list").style.background = "transparent";
+          return false;
+      }
+    };
+document.addEventListener("click", validate);
+var storeDropdownL = document.querySelector(".sub-menu"); // unordered list dropdown-menu
+
+storeDropdownL.addEventListener("click", function(d) {
+  f.stopPropagation();
+});
+</script>

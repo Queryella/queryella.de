@@ -76,16 +76,23 @@
               
               {{- range .Site.Menus.main -}}
               
-              <li class="menu__item menu__dropdown menu__link">
+              <li class="menu__item menu__dropdown menu__link {{ if .HasChildren }} drop-list {{ end }}">
+                {{ if .HasChildren }}
+                <a>
+                  <span class="menu__text">{{ .Name }}</span>
+                  {{ if .HasChildren }}<label class="drop-icon no-lang-label-m" for="{{ .Name }}">▾</label>{{ else }}   <label class="drop-icon invisible" for="{{ .Name }}">.</label> {{ end }}
+                </a>
+                {{ else }}
                 <a href="{{ .URL | absLangURL }}">
                   <span class="menu__text">{{ .Name }}</span>
                   {{ if .HasChildren }}<label class="drop-icon" for="{{ .Name }}">▾</label>{{ else }}   <label class="drop-icon invisible" for="{{ .Name }}">.</label> {{ end }}
                 </a>
-              
-                <input type="checkbox" id="{{ .Name }}">
+                {{ end }}
+
+                <input type="checkbox" id="{{ .Name }}" class="no-lang-input-m">
                 {{ if .HasChildren }}
                 
-                  <ul class="sub-menu">
+                  <ul class="sub-menu sub-menu-m">
                       {{ range .Children }}
                       <li >
                         <a class="nav-link {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}}" {{ if eq
@@ -135,17 +142,17 @@ allInputs.forEach(input => {
 
 // Close dropdown when click outside section
 
-function validate(f){
-var f = f || window.event, // make this works in different browsers 
-  checkNavbarL = document.getElementById("Language"),  // input
-  checkboxNavbarL = document.querySelector(".lang-label");// label
-  
-  if ([checkNavbarL, checkboxNavbarL].indexOf(f.target) < 0 && checkNavbarL.checked) {
-      checkNavbarL.checked = false;
-      document.querySelector(".lang-list").style.background = "transparent";
-      return false;
-  }
-};
+// window.onclick = function(e){
+//    if (!e.target.matches('.drop-list')){
+//     document.querySelector(".sub-menu-m").style.display = "none";
+//     console.log('dsadas');
+//   }
+// }
+// var mob_check = document.querySelector('.no-lang-input-m')
+// if (mob_check.checked) {
+//     console.log('mob test');
+// };
+
 
 function validate(d){
 var d = d || window.event, // make this works in different browsers 
@@ -163,7 +170,6 @@ var storeDropdown = document.querySelector(".sub-menu"); // unordered list dropd
 
 storeDropdown.addEventListener("click", function(d) {
   d.stopPropagation();
-  f.stopPropagation();
 });
 
 
