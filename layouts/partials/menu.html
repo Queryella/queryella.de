@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="container">
       <nav class="navbar navbar-expand-lg justify-content-between align-items-start pt-3" aria-label="Main Navigation">
-        <a class="navbar-brand" href="{{ .Site.BaseURL | absLangURL }}">
+        <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
           {{ $theme := .Page.Params.theme }}
           {{ $type := .Page.Type }}
           {{ $home := .IsHome }}
