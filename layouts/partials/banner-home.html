@@ -8,13 +8,13 @@
                 {{if .IsHome}} <a href= '{{ "/request-a-demo/" | absLangURL }}'  class="bnt main-bnt mt-4">{{ i18n "requestDemo" }}</a> {{end}}
             </div>
             <div class="col-xl-7 col-lg-6 col-12 d-lg-flex d-block justify-content-lg-end justify-content-center align-items-start">
-                
+                {{ if eq .Params.Show_event "on"}}
                 <div class="news-wrapper mt-5 p-4">
                     <p class="news-date text-md-start">{{ .Params.Event_date }}</p>
                     <h2 class="news-title w-md-75">{{ .Params.Event_title }}</h2>
                     <a href="{{ .Params.Event_link }}" class="news-link" target="_blank">{{ i18n "homeEventLink" }} ></a>
                  </div>
-               
+                 {{ end }}
             </div>
         </div>
     </div>
